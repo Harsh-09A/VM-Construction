@@ -4145,3 +4145,56 @@ label {
     transform: scale(1, 0);
   }
 }
+
+
+
+/* Nri-guide */
+
+.Nri_guide .accordion-button {
+  /* display: block; */
+  padding: 15px 20px 15px 30px;
+  font-size: 0.7em;
+  /* font-weight: 600; */
+  /* color: #fff !important; */
+  /* background: var(--colorPrimary) !important; */
+  border: none;
+  transition: all 1s ease 0s;
+}
+
+
+.Nri_guide .accordion-button:not(.collapsed) {
+  display: inline;
+  padding: 15px 20px 15px 30px;
+  font-size: 16px;
+  /* font-weight: 600; */
+  color: #fff !important;
+  background: #000 !important;
+  border: none;
+  transition: all 1s ease 0s;
+}
+
+.Nri_guide .accordion-collapse {
+  /* padding: 25px 20px 15px 40px; */
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 28px;
+  /* background: var(--colorPrimary); */
+  border: none;
+  position: relative;
+}
+
+.Nri_guide .accordion-item {
+  margin-bottom: 20px;
+}
+
+/* .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+} */
