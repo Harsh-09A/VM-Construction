@@ -764,7 +764,7 @@ label {
   justify-content: center;
 }
 .fullscreen-menu .nav-height .inner {
-  width: 360px;
+  width: 600px;
   text-align: center;
 }
 .burger-menu-visible {
@@ -4146,8 +4146,6 @@ label {
   }
 }
 
-
-
 /* Nri-guide */
 
 .Nri_guide .accordion-button {
@@ -4160,7 +4158,6 @@ label {
   border: none;
   transition: all 1s ease 0s;
 }
-
 
 .Nri_guide .accordion-button:not(.collapsed) {
   display: inline;
