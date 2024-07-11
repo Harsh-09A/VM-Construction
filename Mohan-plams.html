@@ -1,0 +1,642 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>VM construction</title>
+    <meta name="description" content="VM construction">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/vm-logo.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Preloader-start -->
+    <div id="preloader">
+        <div class="ta-preloader-block">
+            <div class="ta-spinner-eff">
+                <div class="ta-bar ta-bar-top"></div>
+                <div class="ta-bar ta-bar-right"></div>
+                <div class="ta-bar ta-bar-bottom"></div>
+                <div class="ta-bar ta-bar-left"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader-start-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header class="header-style-five">
+        <div id="sticky-header" class="menu-area transparent-header">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/vm-logo.png" alt="Logo"
+                                            height="100px" /></a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <!-- <li class="menu-item-has-children">
+                          <a href="#">Home</a>
+                          <ul class="sub-menu">
+                            <li><a href="index.html">Home One</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="#">About</a>
+                          <ul class="sub-menu">
+                            <li><a href="overview.html">Overview</a></li>
+                            <li><a href="mission.html">Mission</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="team-details.html">Team Profile</a></li>
+                          </ul>
+                        </li>
+                        <li class="active menu-item-has-children">
+                          <a href="#">Projects</a>
+                          <ul class="sub-menu">
+                            <li><a href="project.html">Projects Two Col</a></li>
+                            <li class="active">
+                              <a href="project-two.html">Projects Three Col</a>
+                            </li>
+                            <li>
+                              <a href="project-three.html">Projects Four Col</a>
+                            </li>
+                            <li>
+                              <a href="project-details.html">Projects Single</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="#">blog</a>
+                          <ul class="sub-menu">
+                            <li><a href="blog.html">Blog Grid</a></li>
+                            <li>
+                              <a href="blog-sidebar.html">Blog Grid Sidebar</a>
+                            </li>
+                            <li><a href="blog-list.html">Blog Standard</a></li>
+                            <li><a href="blog-details.html">Blog Single</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="#">Pages</a>
+                          <ul class="sub-menu">
+                            <li><a href="sirvices.html">Services</a></li>
+                            <li><a href="testimonial.html">Testimonials</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="error.html">404 Error</a></li>
+                          </ul>
+                        </li> -->
+
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li class="active"><a href="project.html">Project</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Buyer's Guide</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="home-loan.html">Home Loan</a></li>
+                                                <li>
+                                                    <a href="stamp.html">Stamp Duty & Registration</a>
+                                                </li>
+                                                <li><a href="nri.html">NRI Guide</a></li>
+                                                <li><a href="#">Project Reports</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="career.html">Career</a></li>
+                                        <li><a href="contact.html">contacts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-action">
+                                    <ul class="list-wrap">
+                                        <li class="header-social">
+                                            <ul class="list-wrap">
+                                                <li>
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header-contact">
+                                            <a href="tel:#">+91 1234567890</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <!-- Mobile Menu  -->
+                        <div class="mobile-menu">
+                            <nav class="menu-box">
+                                <div class="close-btn"><i class="fas fa-times"></i></div>
+                                <div class="nav-logo">
+                                    <a href="index.html"><img src="assets/img/logo/vm-logo.png" alt="Logo"
+                                            height="70px" /></a>
+                                </div>
+                                <div class="menu-outer">
+                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                </div>
+                                <div class="social-links">
+                                    <ul class="clearfix list-wrap">
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-backdrop"></div>
+                        <!-- End Mobile Menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-area-end -->
+
+    <!-- main-area -->
+    <main>
+
+        <!-- gallery-area -->
+        <div class="gallery-area section-pt-140 section-pb-140">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gallery-active">
+                            <div class="gallery-item">
+                                <img src="assets/img/plams/img1.jpg" alt="">
+                                <a href="assets/img/plams/img1.jpg" class="photo-gallery popup-image"></a>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/img/plams/img2.jpg" alt="">
+                                <a href="assets/img/plams/img2.jpg" class="photo-gallery popup-image"></a>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/img/plams/img3.jpg" alt="">
+                                <a href="assets/img/plams/img3.jpg" class="photo-gallery popup-image"></a>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/img/plams/img4.jpg" alt="">
+                                <a href="assets/img/plams/img4.jpg" class="photo-gallery popup-image"></a>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/img/plams/img5.jpg" alt="">
+                                <a href="assets/img/plams/img5.jpg" class="photo-gallery popup-image"></a>
+                            </div>
+                            <!-- <div class="gallery-item">
+                                        <img src="assets/img/gallery/gallery_img02.jpg" alt="">
+                                        <a href="https://www.youtube.com/watch?v=c-goZSYW6qE" class="play-btn popup-video"><i
+                                                class="fab fa-youtube"></i></a>
+                                    </div> -->
+                            <!-- <div class="gallery-item">
+                                        <div class="apartment-view">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!4v1662100217151!6m8!1m7!1sUtVXSDO2fjmgru0WpZ73jA!2m2!1d40.74810413527912!2d-73.98582572164915!3f108.72567799089525!4f-13.920241031746983!5f0.7820865974627469"
+                                                allowfullscreen="" loading="lazy"></iframe>
+                                        </div>
+                                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery-area-end -->
+
+        <!-- project-area -->
+        <section class="project-details-area">
+            <div class="container">
+                <div class="project-details-top">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6">
+                            <div class="project-details-title">
+                                <span>Vashi, Navi Mumbai</span>
+                                <h2 class="title">Mohn Palms</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-side">
+                                <p>
+                                    VM Mohan Palms, a residential project by VM Group, is located in Vashi, Navi Mumbai.
+                                    The project offers a range of well-designed apartments from 2BHK to 3BHK. The
+                                    apartments come with a spacious 419 sqft to 716 sqft area. The project also comes
+                                    with a convenient shopping center for daily needs. The project is well-connected
+                                    with Palm Beach Marg, making it easy to access Delhi Public School Navi Mumbai.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info-wrap">
+                    <ul class="list-wrap">
+                        <li class="info-item">
+                            <div class="icon">
+                                <i class="flaticon-018-rescale"></i>
+                            </div>
+                            <div class="content">
+                                <p>Property size <span>174,000 sqft</span></p>
+                            </div>
+                        </li>
+                        <li class="info-item">
+                            <div class="icon">
+                                <i class="flaticon-008-money-bag"></i>
+                            </div>
+                            <div class="content">
+                                <p>Price Range <span>₹ 70.00 Lac - ₹ 1.20 Cr</span></p>
+                            </div>
+                        </li>
+                        <li class="info-item">
+                            <div class="icon">
+                                <i class="flaticon-017-apartment"></i>
+                            </div>
+                            <div class="content">
+                                <p>Type<span>Apartment</span></p>
+                            </div>
+                        </li>
+                        <li class="info-item">
+                            <div class="icon">
+                                <i class="flaticon-016-puzzle"></i>
+                            </div>
+                            <div class="content">
+                                <p>Flat Size <span>419 - 716 Sqft</span></p>
+                            </div>
+                        </li>
+                        <li class="info-item">
+                            <div class="icon">
+                                <i class="flaticon-009-crane-truck"></i>
+                            </div>
+                            <div class="content">
+                                <p>Status <span>Completed</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- project-area-end -->
+
+        <!-- features-area -->
+        <section class="features-area features-pb-80">
+            <div class="section-title mb-40">
+                <!-- <span class="sub-title">Who we are</span> -->
+                <h2 class="title text-center">
+                 Amenities
+                </h2>
+              </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="features-item">
+                            <div class="feature-icon">
+                                <img src="assets/img/plams/dumbbell.png" alt="" >
+                            </div>
+                            <div class="feature-content">
+                                <h2 class="title">Gymnasium</h2>
+                                <!-- <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet sed quia</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="features-item">
+                            <div class="feature-icon">
+                                <img src="assets/img/plams/swimming.png" alt="" >
+                            </div>
+                            <div class="feature-content">
+                                <h2 class="title">Swimming Pool</h2>
+                                <!-- <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet sed quia</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="features-item">
+                            <div class="feature-icon">
+                                <img src="assets/img/plams/playground.png" alt="" >
+                            </div>
+                            <div class="feature-content">
+                                <h2 class="title">Kid's play area</h2>
+                                <!-- <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet sed quia</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="features-item">
+                            <div class="feature-icon">
+                                <img src="assets/img/plams/luck.png" alt="" >
+                            </div>
+                            <div class="feature-content">
+                                <h2 class="title">Indoor Games</h2>
+                                <!-- <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet sed quia</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="features-item">
+                            <div class="feature-icon">
+                                <img src="assets/img/plams/golf-field.png" alt="" >
+                            </div>
+                            <div class="feature-content">
+                                <h2 class="title">Golf Course</h2>
+                                <!-- <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet sed quia</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="features-item">
+                            <div class="feature-icon">
+                                <img src="assets/img/plams/jogging.png" alt="" >
+                            </div>
+                            <div class="feature-content">
+                                <h2 class="title">Jogging track</h2>
+                                <!-- <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet sed quia</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features-area-end -->
+
+        <!-- direction-area -->
+        <!-- <section class="direction-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="direction-img text-center">
+                            <img src="assets/img/images/direction_img.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="direction-content">
+                            <div class="section-title mb-40">
+                                <span class="sub-title">Baltimore, MD</span>
+                                <h2 class="title">8601 Honeygo Boulevard,</h2>
+                            </div>
+                            <ul class="list-wrap">
+                                <li>Supermarket: <span>200M</span></li>
+                                <li>Railway Station: <span>1,800M</span></li>
+                                <li>Airport: <span>2,790M</span></li>
+                                <li>University: <span>250M</span></li>
+                                <li>Hospital: <span>500M</span></li>
+                                <li>Bus Station: <span>150M</span></li>
+                                <li>Park: <span>1,500M</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn transparent-btn">
+                                <div class="btn_m">
+                                    <div class="btn_c">
+                                        <div class="btn_t1">Get direction</div>
+                                        <div class="btn_t2">Get direction</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- direction-area-end -->
+
+        <!-- plan-area -->
+        <!-- <div class="plan-area section-py-140">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="plan-wrap">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="master-tab" data-bs-toggle="tab"
+                                        data-bs-target="#master-tab-pane" type="button" role="tab"
+                                        aria-controls="master-tab-pane" aria-selected="true">Master Plan</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="tower-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tower-tab-pane" type="button" role="tab"
+                                        aria-controls="tower-tab-pane" aria-selected="false">Tower Plan</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="double-tab" data-bs-toggle="tab"
+                                        data-bs-target="#double-tab-pane" type="button" role="tab"
+                                        aria-controls="double-tab-pane" aria-selected="false">Double Height</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab"
+                                        data-bs-target="#penthouse-tab-pane" type="button" role="tab"
+                                        aria-controls="penthouse-tab-pane" aria-selected="false">Penthouse</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="master-tab-pane" role="tabpanel"
+                                    aria-labelledby="master-tab" tabindex="0"><img
+                                        src="assets/img/images/plan_img01.jpg" alt=""></div>
+                                <div class="tab-pane fade" id="tower-tab-pane" role="tabpanel"
+                                    aria-labelledby="tower-tab" tabindex="0">
+                                    <img src="assets/img/images/plan_img01.jpg" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="double-tab-pane" role="tabpanel"
+                                    aria-labelledby="double-tab" tabindex="0">
+                                    <img src="assets/img/images/plan_img01.jpg" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="penthouse-tab-pane" role="tabpanel"
+                                    aria-labelledby="penthouse-tab" tabindex="0">
+                                    <img src="assets/img/images/plan_img01.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-wrap">
+                            <ul class="list-wrap">
+                                <li><a href="assets/img/images/plan_img01.jpg" download target="_blank"><i
+                                            class="flaticon-010-pdf"></i>Brochure 7.9 kb</a></li>
+                                <li><a href="assets/img/images/plan_img01.jpg" download target="_blank"><i
+                                            class="flaticon-010-pdf"></i>Payment 4.2 kb</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- plan-area-end -->
+
+
+        <!-- newsletter-area -->
+        <section class="newsletter-area newsletter-area-two section-pb-140">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="newsletter-inner">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8">
+                                    <div class="newsletter-content">
+                                        <div class="section-title mb-50">
+                                            <span class="sub-title">Quick Inquiry</span>
+                                            <h2 class="title">If you have any question? we are glad to consult you as
+                                                soon as possible</h2>
+                                        </div>
+                                        <form action="#" class="newsletter-form">
+                                            <ul class="list-wrap">
+                                                <li><input type="text" placeholder="Your name" required="required"></li>
+                                                <li><input type="text" placeholder="Phone number" required="required">
+                                                </li>
+                                                <li class="submit-btn"><input type="submit" value="submit"></li>
+                                            </ul>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkbox">
+                                                <label for="checkbox">I accept <span>Terms & Conditions</span> for
+                                                    processing personal data</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- newsletter-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- footer-area -->
+    <footer>
+        <div class="footer-area footer-bg">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-4 col-sm-5">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo02.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-7">
+                            <div class="footer-widget">
+                                <h2 class="fw-title">Contact</h2>
+                                <div class="footer-contact">
+                                    <p>1940 El Cajon Blvd, San Diego, <br> CA 92104, United States</p>
+                                    <ul class="list-wrap">
+                                        <li><a href="mailto:relandgroup@mail.com">relandgroup@mail.com</a></li>
+                                        <li><a href="tel:0123456789">+7 495 127 5451</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-5">
+                            <div class="footer-widget">
+                                <h2 class="fw-title">Useful links</h2>
+                                <div class="footer-link">
+                                    <ul class="list-wrap">
+                                        <li><a href="overview.html">About Us</a></li>
+                                        <li><a href="contact.html">Terms & Conditions</a></li>
+                                        <li><a href="contact.html">Users Guide</a></li>
+                                        <li><a href="contact.html">Support Center</a></li>
+                                        <li><a href="contact.html">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-7">
+                            <div class="footer-widget">
+                                <h2 class="fw-title">newsletter</h2>
+                                <div class="footer-newsletter">
+                                    <form action="#">
+                                        <input type="email" placeholder="Email address...">
+                                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright-text text-center">
+                                <p>Copyright © <span>Reland</span> 2022. All Rights Reserved</p>
+                            </div>
+                            <div class="footer-social">
+                                <ul class="list-wrap">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.parallaxScroll.min.js"></script>
+    <script src="assets/js/simpleParallax.min.js"></script>
+    <script src="assets/js/slick-animation.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jarallax-video.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
