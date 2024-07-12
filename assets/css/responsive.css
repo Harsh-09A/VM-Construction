@@ -483,7 +483,8 @@
     height: 500px;
 }
 .parallax-img {
-    height: 500px;
+    /* height: 500px; */
+	padding: 0px !important;
 }
 .banner-area-six .banner-img-wrap {
     display: none;
@@ -1167,7 +1168,8 @@
     margin-bottom: 30px;
 }
 .parallax-img {
-    height: 400px;
+    /* height: 400px; */
+	padding: 0px !important;
 }
 .fullscreen-menu .navigation li>a {
     font-size: 26px;
