@@ -2075,7 +2075,7 @@ label {
 	07. Breadcrumb
 ===============================*/
 .breadcrumb-area {
-  padding: 250px 0 140px;
+  padding: 120px 0 120px;
   background: var(--tg-gradient-color);
 }
 .breadcrumb-content {
