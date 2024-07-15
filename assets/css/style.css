@@ -2075,7 +2075,7 @@ label {
 	07. Breadcrumb
 ===============================*/
 .breadcrumb-area {
-  padding: 120px 0 120px;
+  padding: 80px 0;
   background: var(--tg-gradient-color);
 }
 .breadcrumb-content {
@@ -2144,7 +2144,7 @@ label {
   width: 86%;
 }
 .about-area-two .about-content p {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 /*=============================
@@ -2203,9 +2203,9 @@ label {
   /* padding: 0  auto; */
 }
 
-.parallax-img video{
+.parallax-img video {
   border-radius: 20px;
-  height: 550px ;
+  height: 550px;
   /* width: 1000px; */
   aspect-ratio: 16/9;
 }
@@ -4194,14 +4194,13 @@ label {
   margin-bottom: 20px;
 }
 
-.why_choose_content{
+.why_choose_content {
   font-size: 1.5em;
   line-height: 50px;
   /* font-family: var(--tg-body-font-family); */
 }
 
-
- /* video {
+/* video {
   height: 100vh;
   width: 100vw;
   object-fit: cover; 
