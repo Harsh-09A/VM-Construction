@@ -13,7 +13,7 @@
 	height: 755px;
 }
 .gallery-item img {
-	height: 755px;
+	height: 420px;
 }
 .custom-container-two,
 .custom-container {
@@ -181,7 +181,7 @@
 	height: 720px;
 }
 .gallery-item img {
-	height: 720px;
+	height: 420px;
 }
 .slider-active .slick-dots {
     left: 45px;

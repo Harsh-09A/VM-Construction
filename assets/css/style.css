@@ -2704,7 +2704,7 @@ label {
 .gallery-item img {
   border-radius: 16px;
   display: inline-block;
-  height: 785px;
+  height: 400px;
   object-fit: cover;
 }
 .gallery-item .photo-gallery {
