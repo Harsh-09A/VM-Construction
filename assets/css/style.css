@@ -3820,11 +3820,16 @@ label {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   display: block;
-  color: var(--tg-primary-color);
+  /* color: var(--tg-primary-color); */
   margin-bottom: 5px;
 }
+.contact-info-item .sub-title a {
+  color: var(--tg-paragraph-color);
+  font-size: 16px;
+}
+
 .contact-info-item .title {
   font-size: 22px;
   text-transform: uppercase;
@@ -4206,3 +4211,8 @@ label {
   object-fit: cover; 
   position: absolute;
 } */
+
+/*  */
+.header-action {
+  display: none;
+}
