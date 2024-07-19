@@ -21,7 +21,7 @@
   }
   .banner-area-two {
     /* padding: 180px 0; */
-    padding: 20px 0 150px;
+    padding: 20px 0 150px !important;
   }
   .banner-content-two .title {
     font-size: 60px;
@@ -147,7 +147,7 @@
     margin-left: 0px;
   }
   .breadcrumb-area {
-    padding: 180px 0 130px;
+    padding: 25px 0 80px;
   }
   .faq-wrap {
     padding: 0 85px 120px;
@@ -378,7 +378,7 @@
     font-size: 62px;
   }
   .breadcrumb-area {
-    padding: 160px 0 120px;
+    padding: 25px 0 80px;
   }
   .team-details-content {
     margin-left: 0;
@@ -728,7 +728,7 @@
     margin: 0 auto 35px;
   }
   .breadcrumb-area {
-    padding: 140px 0 120px;
+    padding: 25px 0 80px;
   }
   .breadcrumb-content .title {
     font-size: 56px;
@@ -1040,7 +1040,7 @@
     font-size: 42px;
   }
   .breadcrumb-area {
-    padding: 155px 0 120px;
+    padding: 25px 0 80px;
   }
   .team-details-content .title {
     font-size: 38px;
@@ -1424,4 +1424,10 @@
     font-size: 1.2em;
     line-height: 30px;
   }
+
+  /* .navbar-logo img {
+    height: 50px !important;
+  } */
 }
+
+/* Logo */
