@@ -2170,6 +2170,7 @@ label {
 /* about-two */
 .about-img img {
   border-radius: 16px;
+  height: 400px;
 }
 .about-area-two .about-content {
   width: 86%;
