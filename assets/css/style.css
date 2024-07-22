@@ -2171,6 +2171,17 @@ label {
 .about-img img {
   border-radius: 16px;
   height: 400px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.about-img-new img {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 .about-area-two .about-content {
   width: 86%;
