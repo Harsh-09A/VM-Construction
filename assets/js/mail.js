@@ -1,0 +1,73 @@
+(function () {
+  //   emailjs.init("to9PlFrMMimgruuH0");
+  emailjs.init("BnRoAjGd5ec2E2VQn");
+})();
+
+// Get IP Address
+async function getIpAddress() {
+  try {
+    const response = await fetch("https://api.ipify.org");
+    const ip = await response.text();
+    console.log(`IP: ${ip}`);
+    return ip;
+  } catch (error) {
+    console.log(error);
+    return null; // or throw error if you want to handle it differently
+  }
+}
+
+// Form Submit
+const handleFormSubmit = async (
+  formId,
+  nameField,
+  phoneField,
+  privacyField
+) => {
+  const templateParams = {
+    user_name: document.getElementById(nameField).value,
+    contact_number: document.getElementById(phoneField).value,
+    privacy_check: document.getElementById(privacyField).value,
+    ip_address: await getIpAddress(),
+    website_url: window.location.href,
+    to_email: "harsh.autowebbed@gmail.com",
+    // to_email: "adeehomesindia00@gmail.com",
+    company_name: "Mohan Samah ",
+  };
+
+  // Send Form
+  emailjs.send("contact_service", "contact_form", templateParams).then(
+    function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+      // alert("Message Sent Final");
+      document.getElementById(formId).reset();
+      if (response.status === 200) {
+        alert("Thank You");
+        // window.location.href = "thank-you.php";
+      }
+    },
+    function (error) {
+      console.log("FAILED...", error);
+      alert("Message Not Sent");
+    }
+  );
+};
+
+window.onload = function () {
+  document
+    .getElementById("news-letter-cta-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      handleFormSubmit(
+        "news-letter-cta-form",
+        "user_name",
+        "user_phone",
+        "privacy_check"
+      );
+    });
+  document
+    .getElementById("footer-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      handleFormSubmit("footer-form", "user_email");
+    });
+};

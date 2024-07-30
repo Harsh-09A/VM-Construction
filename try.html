@@ -1,0 +1,67 @@
+<!-- Form -->
+<div class="enquire-section ps-5 pe-5">
+  <div class="container">
+    <form id="contact-form" class="text-center">
+      <div class="mb-3">
+        <label for="user_name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control inputStyle shadow-none"
+          name="user_name"
+          id="user_name"
+          placeholder="Name *"
+          autocomplete="off"
+          required />
+      </div>
+      <div class="mb-3">
+        <label for="user_email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control inputStyle shadow-none"
+          name="user_email"
+          id="user_email"
+          placeholder="Email Address"
+          autocomplete="off" />
+      </div>
+      <div class="mb-3">
+        <label for="contact_number" class="form-label">Phone Number</label>
+        <input
+          type="tel"
+          class="form-control inputStyle shadow-none"
+          id="contact_number"
+          name="contact_number"
+          minlength="10"
+          maxlength="10"
+          pattern="[0-9]{10}"
+          placeholder="Phone Number *"
+          oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+          oninput="setCustomValidity('')"
+          required />
+      </div>
+
+      <div class="d-flex ps-1 pb-2" style="font-size: 9px; color: #bfbfbf">
+        <input
+          type="checkbox"
+          checked=""
+          required=""
+          class="custom-control-input custom-control-input-green"
+          id="privacy_check"
+          data-gtm-form-interact-field-id="0" />
+
+        <label class="ps-2 pb-2 custom-control-label" for="privacy_check">
+          I consent to the use of my provided data in accordance with the
+          <a
+            href="privacy_policy.html"
+            target="_blank"
+            style="font: inherit; color: inherit"
+            >privacy policy</a
+          >.</label
+        >
+      </div>
+
+      <button type="submit" class="btn btn-primary submit-btn w-100">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
