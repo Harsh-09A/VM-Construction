@@ -31,6 +31,12 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/mail_contact.js"></script>
   </head>
 
   <body>
@@ -338,27 +344,48 @@
               </div>
             </div>
 
+            <!-- Form Container -->
             <div class="contact-form">
               <div class="div">
-                <form action="index.html" autocomplete="off">
+                <!-- Form -->
+                <form id="contact-page-form" autocomplete="off">
                   <h3 class="title pb-10">Contact us</h3>
                   <div class="input-container">
-                    <input type="text" name="name" class="input" />
-                    <label for="">Username</label>
-                    <span>Username</span>
+                    <input
+                      id="user_name"
+                      required="required"
+                      id="user_name"
+                      type="text"
+                      class="input"
+                      required />
+                    <label for="user_name">Name</label>
+                    <span>Name </span>
                   </div>
                   <div class="input-container">
-                    <input type="email" name="email" class="input" />
-                    <label for="">Email</label>
+                    <input
+                      id="user_email"
+                      type="email"
+                      name="user_email"
+                      class="input" />
+                    <label for="user_email">Email</label>
                     <span>Email</span>
                   </div>
                   <div class="input-container">
-                    <input type="tel" name="phone" class="input" />
-                    <label for="">Phone</label>
+                    <input
+                      id="user_phone"
+                      type="text"
+                      class="input"
+                      minlength="10"
+                      maxlength="10"
+                      pattern="[0-9]{10}"
+                      oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                      oninput="setCustomValidity('')"
+                      required="required" />
+                    <label for="user_phone">Phone</label>
                     <span>Phone</span>
                   </div>
 
-                  <input type="submit" value="Send" class="form-btn" />
+                  <input type="submit" value="submit" class="form-btn" />
                 </form>
               </div>
             </div>

@@ -17,16 +17,11 @@ async function getIpAddress() {
 }
 
 // Form Submit
-const handleFormSubmit = async (
-  formId,
-  nameField,
-  phoneField,
-  privacyField
-) => {
+const handleFormSubmit = async (formId, nameField, phoneField, emailField) => {
   const templateParams = {
     user_name: document.getElementById(nameField).value,
     contact_number: document.getElementById(phoneField).value,
-    privacy_check: document.getElementById(privacyField).value,
+    user_email: document.getElementById(emailField).value,
     ip_address: await getIpAddress(),
     website_url: window.location.href,
     to_email: "harsh.autowebbed@gmail.com",
@@ -54,14 +49,14 @@ const handleFormSubmit = async (
 
 window.onload = function () {
   document
-    .getElementById("news-letter-cta-form")
+    .getElementById("contact-page-form")
     .addEventListener("submit", function (event) {
       event.preventDefault();
       handleFormSubmit(
-        "news-letter-cta-form",
+        "contact-page-form",
         "user_name",
         "user_phone",
-        "privacy_check"
+        "user_email"
       );
     });
 };
