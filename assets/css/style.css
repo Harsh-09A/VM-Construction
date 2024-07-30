@@ -4563,3 +4563,48 @@ div#sticky-header {
   align-items: center;
   justify-content: center;
 }
+
+/*  */
+.alert {
+  position: fixed;
+  width: 500px;
+  top: 100px;
+  left: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 5px 0 #00000022;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+.alert button {
+  padding: 0.6rem 1.3rem;
+  background-color: #0c0f35;
+  border: 2px solid #0c0f35;
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+  width: 20%;
+  align-self: center;
+  margin-top: 1.5rem;
+  border: 1px solid #333;
+}
+.thank-you-popup {
+  text-align: center;
+}

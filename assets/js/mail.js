@@ -41,7 +41,10 @@ const handleFormSubmit = async (
       // alert("Message Sent Final");
       document.getElementById(formId).reset();
       if (response.status === 200) {
-        alert("Thank You");
+        callAlert(
+          "Thank You, Your Form is Submitted.<br/>  We will contact you shortly",
+          3000
+        );
         // window.location.href = "thank-you.php";
       }
     },
@@ -65,3 +68,7 @@ window.onload = function () {
       );
     });
 };
+
+function callAlert(msg) {
+  window.alert(msg, 3000);
+}
