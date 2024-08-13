@@ -43,7 +43,7 @@ const handleFormSubmit = async (
       if (response.status === 200) {
         callAlert(
           "Thank You, Your Form is Submitted.<br/>  We will contact you shortly",
-          3000
+          10000
         );
         // window.location.href = "thank-you.php";
       }
@@ -70,5 +70,5 @@ window.onload = function () {
 };
 
 function callAlert(msg) {
-  window.alert(msg, 3000);
+  window.alert(msg, 10000);
 }
